@@ -11,7 +11,9 @@ public class Blob {
     this(key, null, null); // this is how you do it    
   }
   // how do you propose to print this structure? 
-  
+  public String toString() {
+    return "( " + this.key + " " + this.left + " " + this.right + " )" ;  
+  }
   public static void main(String[] args) {
     Blob a = new Blob(1, new Blob(2, null, null), null);  
     Blob b = new Blob(3); // new Blob(3, null, null); 
